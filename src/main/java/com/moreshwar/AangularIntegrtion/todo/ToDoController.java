@@ -27,7 +27,7 @@ public class ToDoController {
 	@GetMapping("/users/{userName}/todos")
 	List<Todo> getAllTodos(@PathVariable String userName){
 		return todoHardCodedService.findAll();
-	}
+	} 
 	
 	@GetMapping("/users/{userName}/todos/{id}")
 	Todo getTodo(@PathVariable String userName,@PathVariable long id){
