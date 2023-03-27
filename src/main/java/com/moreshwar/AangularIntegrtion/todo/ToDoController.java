@@ -45,7 +45,7 @@ public class ToDoController {
 		Todo createdTodo=todoHardCodedService.save(todo);
 		URI uri=ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(createdTodo.getId()).toUri();
 		return  ResponseEntity.created(uri).build();
-	}
+	} 
 	
 	@DeleteMapping("/users/{userName}/todos/{id}")
 	  ResponseEntity<Void> deleteTodo(@PathVariable String userName,@PathVariable long id){
