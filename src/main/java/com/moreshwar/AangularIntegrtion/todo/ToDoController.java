@@ -33,7 +33,7 @@ public class ToDoController {
 	Todo getTodo(@PathVariable String userName,@PathVariable long id){
 		return todoHardCodedService.findById(id);
 	} 
-	
+	 
 	@PutMapping("/users/{userName}/todos/{id}")
 	ResponseEntity<Todo> updateTodo(@PathVariable String userName,@PathVariable long id,@RequestBody Todo todo){
 		Todo todoUpdated=todoHardCodedService.save(todo);
