@@ -19,7 +19,7 @@ import org.springframework.web.util.UriComponents;
 
 @CrossOrigin(origins="http://localhost:4200")
 @RestController
-public class ToDoController {
+public class ToDoController { 
 
 	@Autowired
 	TodoHardCodedService todoHardCodedService;
